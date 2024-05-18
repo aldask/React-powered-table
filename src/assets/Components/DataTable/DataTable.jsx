@@ -14,6 +14,7 @@ function DataTable({ data, pageNo, elements, setPageNo, setElements }) {
 
   const handleViewChange = (event) => {
     setElements(Number(event.target.value));
+    setPageNo(1);
   };
 
   return (
